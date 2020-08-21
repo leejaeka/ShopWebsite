@@ -13,6 +13,177 @@ html {
   -webkit-text-size-adjust: 100%; /* 2 */
 }
 
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+@import url("https://fonts.googleapis.com/css?family=Arapey");
+
+body {
+    margin: 0;
+    font-family: "Arapey";
+}
+
+    body h1 {
+        font-size: 2em;
+        text-align: center;
+        margin-top: 30%;
+    }
+
+section {
+    padding: 3em;
+    height: 100vh;
+    position: relative;
+    box-sizing: border-box;
+}
+
+
+section blockquote {
+    font-size: 2.3em;
+    width: 30%;
+    margin-top: 17%;
+    position: absolute;
+}
+
+    section blockquote {
+        font-size: 2.3em;
+        color: #ffffff;
+        width: 30%;
+        margin-top: 17%;
+        position: absolute;
+    }
+
+        section blockquote span {
+            width: 100%;
+            background: #ff8383;
+            display: block;
+            height: 5px;
+            margin-top: 20px;
+        }
+
+    section img {
+        position: absolute;
+    }
+
+        section img:nth-of-type(1) {
+            width: 40%;
+            right: 0;
+            top: 20%;
+            border-bottom: 5px solid #ff8383;
+            border-top: 5px solid #ffffff;
+        }
+
+        section img:nth-of-type(2) {
+            width: 25%;
+            right: 40%;
+            top: 29%;
+            margin-top: 15%;
+            border-bottom: 5px solid #ff8383;
+            border-top: 5px solid #ffffff;
+        }
+
+
+
+.sticky {
+    background: #575757 !important;
+}
+.main-page {
+    width: 100%;
+    height: 100vh;
+    background: #ff8383;
+    overflow: hidden;
+}
+
+.percentage {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+}
+
+#box {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    border-top: 5px solid lightgray;
+    border-left: 5px solid lightgray;
+    border-right: 5px solid lightgray;
+    border-bottom: 5px solid #ff8383;
+    
+    margin: auto;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+
+canvas {
+    background-image: radial-gradient(#666, #333);
+}
+
+#instructions {
+    position: absolute;
+    color: #fff;
+    bottom: 0;
+    padding-bottom: 6px;
+    font-family: sans-serif;
+    width: 100%;
+    text-align: center;
+    pointer-events: none;
+}
+
+#logo {
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    animation: fill-anim 0.5s ease forwards 3s;
+}
+
+#logo path:nth-child(1){
+    stroke-dasharray: 327px;
+    stroke-dashoffset: 327px;
+    animation:line-anim 2s ease forwards;
+}
+#logo path:nth-child(2) {
+    stroke-dasharray: 281px;
+    stroke-dashoffset: 281px;
+    animation:line-anim 2.2s ease forwards;
+}
+#logo path:nth-child(3) {
+    stroke-dasharray: 164px;
+    stroke-dashoffset: 164px;
+    animation:line-anim 2.4s ease forwards;
+}
+#logo path:nth-child(4) {
+    stroke-dasharray: 290px;
+    stroke-dashoffset: 290px;
+    animation:line-anim 2.6s ease forwards;
+}
+#logo path:nth-child(5) {
+    stroke-dasharray: 164px;
+    stroke-dashoffset: 164px;
+    animation:line-anim 2.8s ease forwards;
+}
+#logo path:nth-child(6) {
+    stroke-dasharray: 337px;
+    stroke-dashoffset: 337px;
+    animation:line-anim 3s ease forwards;
+}
+@keyframes line-anim{
+    to{
+        stroke-dashoffset:0;
+    }
+}
+@keyframes fill-anim {
+    to {
+        fill:black;
+        stroke:black;
+    }
+}
 /* Sections
    ========================================================================== */
 
@@ -20,9 +191,7 @@ html {
  * Remove the margin in all browsers.
  */
 
-body {
-  margin: 0;
-}
+
 
 /**
  * Render the `main` element consistently in IE.

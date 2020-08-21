@@ -1,89 +1,57 @@
-<!DOCTYPE html>
-<html>
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Jaekang Lee</title>
-    <link href="style.css" rel="stylesheet" />
+    <title></title>
+    <link href="./css/style.css" rel="stylesheet" />
 </head>
-<body class="bg-purple-600">
-    <section class="showcase">
-        <div class="video_container">
-            <video src="video/55.mp4" id="abc" autoplay muted loop></video>
+<body>
+    <section class="main-page">
+        <div id="mainpage">
+            <svg id="logo" width="360" height="120" viewBox="-4 -8 320 68" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M43.944 52.12H14.76L9.384 67H0.167999L24.36 0.472H34.44L58.536 67H49.32L43.944 52.12ZM41.448 45.016L29.352 11.224L17.256 45.016H41.448Z" stroke="black" stroke-width="5" />
+                <path d="M115.736 14.392V67H107V59.224C105.336 61.912 103 64.024 99.9915 65.56C97.0475 67.032 93.7835 67.768 90.1995 67.768C86.1035 67.768 82.4235 66.936 79.1595 65.272C75.8955 63.544 73.3035 60.984 71.3835 57.592C69.5275 54.2 68.5995 50.072 68.5995 45.208V14.392H77.2395V44.056C77.2395 49.24 78.5515 53.24 81.1755 56.056C83.7995 58.808 87.3835 60.184 91.9275 60.184C96.5995 60.184 100.279 58.744 102.967 55.864C105.656 52.984 107 48.792 107 43.288V14.392H115.736Z" stroke="black" stroke-width="4.5" />
+                <path d="M139.222 22.936C140.758 19.928 142.934 17.592 145.75 15.928C148.63 14.264 152.118 13.432 156.214 13.432V22.456H153.91C144.118 22.456 139.222 27.768 139.222 38.392V67H130.486V14.392H139.222V22.936Z" stroke="black" stroke-width="5" />
+                <path d="M189.242 67.864C184.314 67.864 179.834 66.744 175.802 64.504C171.834 62.264 168.698 59.096 166.394 55C164.154 50.84 163.034 46.04 163.034 40.6C163.034 35.224 164.186 30.488 166.49 26.392C168.858 22.232 172.058 19.064 176.09 16.888C180.122 14.648 184.634 13.528 189.626 13.528C194.618 13.528 199.13 14.648 203.162 16.888C207.194 19.064 210.362 22.2 212.666 26.296C215.034 30.392 216.218 35.16 216.218 40.6C216.218 46.04 215.002 50.84 212.57 55C210.202 59.096 206.97 62.264 202.874 64.504C198.778 66.744 194.234 67.864 189.242 67.864ZM189.242 60.184C192.378 60.184 195.322 59.448 198.074 57.976C200.826 56.504 203.034 54.296 204.698 51.352C206.426 48.408 207.29 44.824 207.29 40.6C207.29 36.376 206.458 32.792 204.794 29.848C203.13 26.904 200.954 24.728 198.266 23.32C195.578 21.848 192.666 21.112 189.53 21.112C186.33 21.112 183.386 21.848 180.698 23.32C178.074 24.728 175.962 26.904 174.362 29.848C172.762 32.792 171.962 36.376 171.962 40.6C171.962 44.888 172.73 48.504 174.266 51.448C175.866 54.392 177.978 56.6 180.602 58.072C183.226 59.48 186.106 60.184 189.242 60.184Z" stroke="black" stroke-width="5" />
+                <path d="M236.441 22.936C237.977 19.928 240.153 17.592 242.969 15.928C245.849 14.264 249.336 13.432 253.432 13.432V22.456H251.128C241.336 22.456 236.441 27.768 236.441 38.392V67H227.704V14.392H236.441V22.936Z" stroke="black" stroke-width="5" />
+                <path d="M260.253 40.504C260.253 35.128 261.341 30.424 263.517 26.392C265.693 22.296 268.669 19.128 272.445 16.888C276.285 14.648 280.541 13.528 285.213 13.528C289.821 13.528 293.821 14.52 297.213 16.504C300.605 18.488 303.133 20.984 304.797 23.992V14.392H313.629V67H304.797V57.208C303.069 60.28 300.477 62.84 297.021 64.888C293.629 66.872 289.661 67.864 285.117 67.864C280.445 67.864 276.221 66.712 272.445 64.408C268.669 62.104 265.693 58.872 263.517 54.712C261.341 50.552 260.253 45.816 260.253 40.504ZM304.797 40.6C304.797 36.632 303.997 33.176 302.397 30.232C300.797 27.288 298.621 25.048 295.869 23.512C293.181 21.912 290.205 21.112 286.941 21.112C283.677 21.112 280.701 21.88 278.013 23.416C275.325 24.952 273.181 27.192 271.581 30.136C269.981 33.08 269.181 36.536 269.181 40.504C269.181 44.536 269.981 48.056 271.581 51.064C273.181 54.008 275.325 56.28 278.013 57.88C280.701 59.416 283.677 60.184 286.941 60.184C290.205 60.184 293.181 59.416 295.869 57.88C298.621 56.28 300.797 54.008 302.397 51.064C303.997 48.056 304.797 44.568 304.797 40.6Z" stroke="black" stroke-width="5" />
+            </svg>
         </div>
-        <div class="video_bg" id="video_bg"></div>
-        <div class="content">
-            <h1>Jaekang Lee</h1>
-            <h3>Welcome to my website</h3>
-            <button href="jaekanglee-games.html" id="learn_more_btn" onmouseover="learn_more_onmouseover()" onmouseout="learn_more_onmouseout()" onclick="window.location.href='jaekanglee-games.html'" target="_blank"
-                    class="inline-block text-sm px-4 py-2 leading-none border
-                    rounded text-white border-white hover:border-transparent
-                    hover:text-blue-500 hover:bg-white mt-4 md:mt-0 ">
-                Explore
-            </button>
-        </div>
+        
     </section>
-    <!-- NAV BAR COMPONENT -->
-    <nav id="testing" class="flex items-center justify-between flex-wrap bg-purple-800 p-6">
-        <div class="flex items-center flex-shrink-0 text-white mr-6">
-            <span class="font-bold text-xl"><a href="jaekanglee.html">Jaekang Lee</a></span>
-        </div>
-
-        <div class="w-full block flex-grow sm:flex sm:items-center sm:w-auto ">
-            <div class="mt-6 text-sm sm:flex-grow" id="nav_bars">
-                <a href="jaekanglee-project.html" id="projects_bar"
-                   class="dropbtn mr-8 block mt-4 sm:inline-block sm:mt-0 text-purple-200 hover:text-white mr-4"
-                   onmouseover="show_proj_dropdown()" onmouseout="remove_proj_dropdown()">
-                    PROJECTS
-                </a>
-                <ul class="dropdown-menu absolute z-40 shadow-xl w-20 opacity-0 hover:opacity-100 bg-purple-500" onmouseover="show_proj_dropdown()" onmouseout="remove_proj_dropdown()" id="proj_dropdown">
-                    <li class="block px-2 py-2 text-purple-200 hover:bg-purple-600 hover:text-white"><a href="#">Project A</a></li>
-                    <li class="block px-2 py-2 text-purple-200 hover:bg-purple-600 hover:text-white"><a href="#">Project B</a></li>
-                    <li class="block px-2 py-2 text-purple-200 hover:bg-purple-600 hover:text-white"><a href="#">Project C</a></li>
-                </ul>
-
-
-                <!--<a href="jaekanglee-games.html" id="games_bar"
-                   class="block mr-8 mt-4 sm:inline-block sm:mt-0 text-purple-200 hover:text-white mr-4
-                   ">
-                    GAMES
-                </a>-->
-                <a href="jaekanglee-art.html" id="art_bar"
-                   class="block mr-8 mt-4 sm:inline-block sm:mt-0 text-purple-200 hover:text-white mr-4">
-                    ART & DESIGN
-                </a>
-                <a href="jaekanglee-video.html" id="video_bar"
-                   class="block mr-8 mt-4 sm:inline-block sm:mt-0 text-purple-200 hover:text-white mr-4 opacity-0">
-                    VIDEOS
-                </a>
-            </div>
-            <div>
-                <!--<embed src“document/Jaekang-Lee-Resume.pdf” width=”600” height=”500”>-->
-                <a href="document/Jaekang-Lee-Resume.pdf" target="_blank"
-                   class="inline-block text-sm px-4 py-2 leading-none border
-                    rounded text-white border-white hover:border-transparent
-                    hover:text-blue-500 hover:bg-white mt-4 md:mt-0 ">Resume</a>
-                <!--</embed>-->
-            </div>
-        </div>
-    </nav>
-
-
-    <section id="about">
-
-        <div class="social">
-            <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
-            <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
-            <a href="#" target="_blank"><i class="fab fa-github"></i></a>
-            <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
-            <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
-        </div>
+    <section class="sticky">
+        <blockquote>Hello World<span></span></blockquote>
+        <img id="office" class="" src="./image/example2.jpg">
+        <img id="building" class=""  src="./image/example1.jpg">
+        <div id="box"></div>
     </section>
-    <footer class="flex bg-purple-800 text-purple-200 bottom-0" id="main-footer">
-    </footer>
-    <script src="main.js"></script>
-    <script src="https://kit.fontawesome.com/6a23aaa49c.js" crossorigin="anonymous"></script>
+    <section class="main-page">
+    </section>
+    <section class="sticky">
+        <div id="googleMap" style="width:100%;height:400px;"></div>
+
+        <script>
+            function myMap() {
+                var myLatLng = { lat: 49.282211, lng: -122.799332 };
+                var mapProp = {
+                    center: myLatLng,
+                    zoom: 19,
+                };
+                var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
+                var marker = new google.maps.Marker({
+                    position: myLatLng,
+                    map: map,
+                    title: 'Hello World!'
+                });
+            }
+        </script>
+
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB9tOyILBWDD4YVoDZsCH_fUJInOTB0lpk&callback=myMap"></script>
+    </section>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/ScrollMagic.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.js"></script>
+    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>-->
+    
+    <script src="./app.js"></script>
 
 </body>
-</html>
