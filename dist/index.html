@@ -1,10 +1,40 @@
-<html xmlns="http://www.w3.org/1999/xhtml">
+﻿<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <title></title>
     <link href="./css/style.css" rel="stylesheet" />
 </head>
 <body>
-    <section class="main-page">
+    <nav id="topNavbar" class="topNavbar flex items-center justify-between flex-wrap p-6">
+        <div class="flex items-center flex-shrink-0 text-black mr-6">
+            <span class="font-bold text-xl">
+                <a href="index.html" />
+                <img src="image/logo.png" class="logoResponsive" />
+            </span>
+        </div>
+
+        <div class="w-full block flex-row-reverse sm:flex sm:items-center sm:w-auto ">
+            <div class="sm:flex-grow " id="nav_bars">
+                <a href="#section_about" id=""
+                   class="hvr-float navigation dropbtn mr-8 block mt-4 border-b-2 border-black 
+                   sm:inline-block sm:mt-0 text-black">
+                    About
+                </a>
+
+                <a href="#section_menu" id="" 
+                   class="hvr-float navigation dropbtn mr-8 block mt-4 sm:inline-block sm:mt-0 
+                   border-b-2 border-black text-black">
+                    Menu
+                </a>
+                <a href="#section_contact" id=""
+                   class="hvr-float navigation dropbtn mr-8 block mt-4 sm:inline-block sm:mt-0 
+                   border-b-2 border-black text-black">
+                    Contact
+                </a>
+            </div>
+   
+        </div>
+    </nav>
+    <section class="main-page" id="section_home">
         <div id="mainpage">
             <svg id="logo" width="360" height="120" viewBox="-4 -8 320 68" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M43.944 52.12H14.76L9.384 67H0.167999L24.36 0.472H34.44L58.536 67H49.32L43.944 52.12ZM41.448 45.016L29.352 11.224L17.256 45.016H41.448Z" stroke="black" stroke-width="5" />
@@ -15,18 +45,19 @@
                 <path d="M260.253 40.504C260.253 35.128 261.341 30.424 263.517 26.392C265.693 22.296 268.669 19.128 272.445 16.888C276.285 14.648 280.541 13.528 285.213 13.528C289.821 13.528 293.821 14.52 297.213 16.504C300.605 18.488 303.133 20.984 304.797 23.992V14.392H313.629V67H304.797V57.208C303.069 60.28 300.477 62.84 297.021 64.888C293.629 66.872 289.661 67.864 285.117 67.864C280.445 67.864 276.221 66.712 272.445 64.408C268.669 62.104 265.693 58.872 263.517 54.712C261.341 50.552 260.253 45.816 260.253 40.504ZM304.797 40.6C304.797 36.632 303.997 33.176 302.397 30.232C300.797 27.288 298.621 25.048 295.869 23.512C293.181 21.912 290.205 21.112 286.941 21.112C283.677 21.112 280.701 21.88 278.013 23.416C275.325 24.952 273.181 27.192 271.581 30.136C269.981 33.08 269.181 36.536 269.181 40.504C269.181 44.536 269.981 48.056 271.581 51.064C273.181 54.008 275.325 56.28 278.013 57.88C280.701 59.416 283.677 60.184 286.941 60.184C290.205 60.184 293.181 59.416 295.869 57.88C298.621 56.28 300.797 54.008 302.397 51.064C303.997 48.056 304.797 44.568 304.797 40.6Z" stroke="black" stroke-width="5" />
             </svg>
         </div>
-        
+
     </section>
-    <section class="sticky">
-        <blockquote>Hello World<span></span></blockquote>
+    <section class="sticky" id="section_about">
+        <blockquote>Hello World<span id="blockquoteSpan"></span></blockquote>
         <img id="office" class="" src="./image/example2.jpg">
-        <img id="building" class=""  src="./image/example1.jpg">
-        <div id="box"></div>
+        <img id="building" class="" src="./image/example1.jpg">
+        <div id="box" ></div>
     </section>
-    <section class="main-page">
+    
+    <section class="main-page" id="section_menu">
     </section>
-    <section class="sticky">
-        <div id="googleMap" style="width:100%;height:400px;"></div>
+    <section class="sticky" id="section_contact">
+        <div id="googleMap" style="width:60%;height:100%;max-height:400px;"></div>
 
         <script>
             function myMap() {
@@ -46,12 +77,12 @@
 
         <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB9tOyILBWDD4YVoDZsCH_fUJInOTB0lpk&callback=myMap"></script>
     </section>
-    
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.0/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/ScrollMagic.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.js"></script>
     <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>-->
-    
+
     <script src="./app.js"></script>
 
 </body>

@@ -1,8 +1,10 @@
 {
   "ExpandedNodes": [
     "",
-    "\\dist"
+    "\\dist",
+    "\\dist\\css",
+    "\\dist\\image"
   ],
-  "SelectedNode": "\\package-lock.json",
+  "SelectedNode": "\\dist\\index.html",
   "PreviewInSolutionExplorer": false
 }
