@@ -1,3 +1,27 @@
+// When the user scrolls down 80px from the top of the document, 
+//resize the navbar's padding and the logo's font size
+window.onscroll = function () { scrollFunction() };
+savePadding = document.getElementById("topNavbar").style.padding;
+saveFontSize = document.getElementById("topNavbar").style.fontSize;
+var topNav = document.getElementById("topNavbar");
+function scrollFunction() {
+    if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+        topNav.style.padding = "5px 0px";
+        topNav.style.fontSize = "0.1vh";
+        console.log(topNav.style.fontSize);
+        //document.getElementById("logo").style.fontSize = "25px";
+    } else {
+        topNav.style.padding = savePadding;
+        topNav.style.fontSize = saveFontSize;
+        //document.getElementById("topNavbar").style.padding = "100px 0px";
+        //document.getElementById("logo").style.fontSize = "35px";
+    }
+}
+function gotoAbout() {
+    var element = document.getElementById("section_about");
+    element.scrollTop = element.scrollHeight - element.clientHeight;
+}
+
 // JavaScript source code
 //const logo = document.querySelectorAll("#logo path");
 //for (let i = 0; i < logo.length; i++) {
