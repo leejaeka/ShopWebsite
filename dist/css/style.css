@@ -18,29 +18,46 @@ html {
     margin: 0;
     box-sizing: border-box;
 }
+#about {
+    padding: 40px;
+    text-align: center;
+}
+
+.social a {
+    margin: 0 5px;
+}
 
 .logoResponsive{
     max-height:40px;
 }
 @import url("https://fonts.googleapis.com/css?family=Arapey");
-
+.googleMap {
+    margin-top: 3%;
+    border-color: #ff8383;
+}
+.threeInfo{
+    margin-top:3%;
+}
 body {
     margin: 0;
     font-family: "Arapey";
+    background: #575757 !important;
 }
 
     body h1 {
         font-size: 2em;
-        text-align: center;
-        margin-top: 30%;
     }
 
-section {
+section:not(.about) {
     padding: 3em;
     height: 100vh;
-    position: relative;
     box-sizing: border-box;
 }
+section about{
+    padding: 3em;
+    height:10vh;
+}
+
 
 
 section blockquote {
@@ -134,7 +151,12 @@ section blockquote {
     background: #ff8383;
     overflow: hidden;
 }
-
+.information {
+    background: #575757 !important;
+}
+.googleWrap {
+    text-align: center;
+}
 .percentage {
     position: absolute;
     bottom: 10px;

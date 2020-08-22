@@ -15,23 +15,23 @@
         <div class="w-full block flex-row-reverse sm:flex sm:items-center sm:w-auto ">
             <div class="sm:flex-grow " id="nav_bars">
                 <a href="#section_about" id=""
-                   class="hvr-float navigation dropbtn mr-8 block mt-4 border-b-2 border-black 
+                   class="hvr-float navigation dropbtn mr-8 block mt-4 border-b-2 border-black
                    sm:inline-block sm:mt-0 text-black">
                     About
                 </a>
 
-                <a href="#section_menu" id="" 
-                   class="hvr-float navigation dropbtn mr-8 block mt-4 sm:inline-block sm:mt-0 
+                <a href="#section_menu" id=""
+                   class="hvr-float navigation dropbtn mr-8 block mt-4 sm:inline-block sm:mt-0
                    border-b-2 border-black text-black">
                     Menu
                 </a>
                 <a href="#section_contact" id=""
-                   class="hvr-float navigation dropbtn mr-8 block mt-4 sm:inline-block sm:mt-0 
+                   class="hvr-float navigation dropbtn mr-8 block mt-4 sm:inline-block sm:mt-0
                    border-b-2 border-black text-black">
                     Contact
                 </a>
             </div>
-   
+
         </div>
     </nav>
     <section class="main-page" id="section_home">
@@ -51,38 +51,80 @@
         <blockquote>Hello World<span id="blockquoteSpan"></span></blockquote>
         <img id="office" class="" src="./image/example2.jpg">
         <img id="building" class="" src="./image/example1.jpg">
-        <div id="box" ></div>
+        <div id="box"></div>
     </section>
-    
-    <section class="main-page" id="section_menu">
-    </section>
-    <section class="sticky" id="section_contact">
-        <div id="googleMap" style="width:60%;height:100%;max-height:400px;"></div>
 
-        <script>
-            function myMap() {
-                var myLatLng = { lat: 49.282211, lng: -122.799332 };
-                var mapProp = {
-                    center: myLatLng,
-                    zoom: 19,
-                };
-                var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
-                var marker = new google.maps.Marker({
-                    position: myLatLng,
-                    map: map,
-                    title: 'Hello World!'
-                });
-            }
-        </script>
-
-        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB9tOyILBWDD4YVoDZsCH_fUJInOTB0lpk&callback=myMap"></script>
+    <section class="main-page flex justify-evenly" id="section_menu">
+        
     </section>
+    <section class="information"  id="section_contact" >
+        <div class="googleWrap ">
+            <div id="googleMap" class="googleMap"
+                 style="width:100%;height:100%;max-height:400px;"></div>
+        </div>
+        
+        <div class="threeInfo flex justify-evenly">
+            <div>
+                <h1 class="info">Location</h1>
+                <button>Get Direction</button>
+                <p>
+                    105, 2922 Glen Dr #150,
+                    <br />Coquitlam, BC V3B 2P5
+                </p>
+            </div>
+            <div>
+                <h1 class="info">Contact</h1>
+                <ul>
+                    <li>e-mail: </li>
+                    <li>Call: </li>
+                </ul>
+            </div>
+            <div class="">
+                <h1 class="info">Business Hours</h1>
+                <ul>
+                    <li>Sun: N/A</li>
+                    <li>Mon: 9:30AM - 7:00PM</li>
+                    <li>Tue: 9:30AM - 7:00PM</li>
+                    <li>Wed: 9:30AM - 7:00PM</li>
+                    <li>Thu: 9:30AM - 7:00PM</li>
+                    <li>Fri: 9:30AM - 7:00PM</li>
+                    <li>Sat: 9:30AM - 7:00PM</li>
+                </ul>
+            </div>
+            
+        </div>
+        
+    </section>
+    <section id="about" class="about">
+        <div class="social">
+            <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+    </section>
+    <script>
+        function myMap() {
+            var myLatLng = { lat: 49.282211, lng: -122.799332 };
+            var mapProp = {
+                center: myLatLng,
+                zoom: 19,
+            };
+            var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
+            var marker = new google.maps.Marker({
+                position: myLatLng,
+                map: map,
+                title: 'Hello World!'
+            });
+        }
+    </script>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB9tOyILBWDD4YVoDZsCH_fUJInOTB0lpk&callback=myMap"></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.0/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/ScrollMagic.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.js"></script>
     <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>-->
-
+    <script src="https://kit.fontawesome.com/6a23aaa49c.js" crossorigin="anonymous"></script>
     <script src="./app.js"></script>
 
 </body>
