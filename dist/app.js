@@ -23,10 +23,10 @@ function gotoAbout() {
 }
 
 // JavaScript source code
-//const logo = document.querySelectorAll("#logo path");
-//for (let i = 0; i < logo.length; i++) {
-//    console.log(`letter ${i+1} is ${logo[i].getTotalLength()}`);
-//}
+const logo = document.querySelectorAll("#logo path");
+for (let i = 0; i < logo.length; i++) {
+    console.log(`letter ${i+1} is ${logo[i].getTotalLength()}`);
+}
 var tl = new TimelineMax({ onUpdate: updatePercentage });
 var tl2 = new TimelineMax();
 const controller = new ScrollMagic.Controller();
