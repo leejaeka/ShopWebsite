@@ -41,11 +41,11 @@ tl2.from("#box", 1, { x:-100,opacity: 0, scale: 0 });
 tl2.to("#box", .5, { scale: 1.3,  borderBottomColor: "black", borderTopColor: "black", borderLeftColor: "black", borderRightColor: "black",  boxShadow: '1px 1px 0px 0px rgba(0,0,0,0.09)' })
 
 const scene = new ScrollMagic.Scene({
-    triggerElement: ".sticky",
+    triggerElement: ".about",
     triggerHook: "onLeave",
     duration: "100%"
 })
-    .setPin(".sticky")
+    .setPin(".about")
     .setTween(tl)
     .addTo(controller);
 

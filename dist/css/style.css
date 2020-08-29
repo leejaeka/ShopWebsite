@@ -23,6 +23,7 @@ html {
     bottom:0%;
     padding: 40px;
     text-align: center;
+
 }
 
 .social a {
@@ -48,23 +49,25 @@ body {
 }
 
     body h1 {
-        font-size: 2em;
+        font-size:2vw;
     }
 
-section:not(.about) {
+section:not(.menu){
     padding: 3em;
     height: 100vh;
     box-sizing: border-box;
 }
 section menu{
-    height:200vh;
 }
 section about{
     padding: 3em;
     height:10vh;
+
 }
 
-
+li {
+    font-size:1.2vw;
+}
 
 section blockquote {
     font-size: 2.3em;
@@ -101,7 +104,14 @@ section blockquote {
             border-bottom: 5px solid black;
             border-top: 5px solid black;
         }
-        
+.building {
+    width: 40%;
+    right: 10px;
+    max-height: 40%;
+    top: 10%;
+    border-bottom: 5px solid black;
+    border-top: 5px solid black;
+}
 
         /*section img:nth-of-type(2) {
             width: 20%;
@@ -112,10 +122,8 @@ section blockquote {
             border-top: 5px solid black;
         }*/
 section #office {
-    position: absolute;
     width: 100%;
-    top: 100%;
-    margin-top: 25%;
+    border-top: 5px solid black;
     /*border-bottom: 5px solid black;*/
 }
 .sticky {
@@ -229,6 +237,13 @@ canvas {
     transform: translate(-50%,-50%);
     animation: fill-anim 0.5s ease forwards 3s;
 }
+#subtitle {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    animation: fill-anim 0.5s ease forwards 3s;
+}
 
 #logo path:nth-child(1){
     stroke-dasharray: 500px;
@@ -311,20 +326,23 @@ main {
 h1 {
     font-family: 'Poppins', sans-serif;
     color:white;
-    font-size: 2em;
+    font-size: 2vw;
     border: 5px black;
     background-color:black;
     padding:0.3em;
 }
 h2 {
     font-family: 'Poppins', sans-serif;
-    font-size: 1.7em;
+    font-size: 1.4vw;
     padding-top:5px;
 }
 h3 {
     font-family: 'Poppins', sans-serif;
-    font-size: 1.7em;
+    font-size: 1.4vw;
     padding-top: 5px;
+}
+p {
+    font-size: 1vw;
 }
 
 /* Grouping content
@@ -798,7 +816,6 @@ h3,
 h4,
 h5,
 h6 {
-  font-size: inherit;
   font-weight: inherit;
 }
 
